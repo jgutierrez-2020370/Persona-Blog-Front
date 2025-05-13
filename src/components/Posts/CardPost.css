@@ -1,0 +1,111 @@
+.Posts-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  margin: 15px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #222525;
+}
+
+.posts-center{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.40);
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #c2c4c4;
+  margin-bottom: 10px;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  color: #acaeae;
+  margin-bottom: 10px;
+}
+
+.cardCourse {
+  font-size: 0.9rem;
+  color: #c2c4c4;
+  margin-bottom: 10px;
+}
+
+.cardDate {
+  font-size: 0.9rem;
+  color: #acaeae;
+  margin-bottom: 15px;
+}
+
+.cardLink {
+  font-size: 1rem;
+  color: #513284;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.cardLink:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #f0f0f0;
+  margin: 15px 0;
+}
+
+.link {
+  color: #815d00;
+
+}
+
+
+.btn-comments {
+  background-color: #cfd1d2;
+  color: black;
+  font-size: 1rem;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-comments:hover {
+  background-color: #616366;
+}
+
+#course-filter {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 200px;
+  background-color: #363535;
+  color: #c2c4c4;
+  text-align: center;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+}
