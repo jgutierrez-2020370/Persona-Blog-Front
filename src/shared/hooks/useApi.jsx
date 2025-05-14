@@ -1,10 +1,13 @@
 import { useState } from 'react'
-import { getPostRequest } from '../../services/api.js'
+import { getPostCommantaries, getPostRequest } from '../../services/api.js'
 import toast from 'react-hot-toast'
 import { addCommentaryRequest } from '../../services/api.js'
 
 export const useApi = () => {
     const [posts, setPosts] = useState(null)
+    
+    
+
     const getPosts = async()=>{
        const response = await getPostRequest()
        if(response.error){
@@ -28,10 +31,16 @@ export const useApi = () => {
       }
       return toast.success('Publicación guardada')
     }
+
+    
+
+  
   return {
     posts,
     isFetchingPosts: !posts,
     getPosts,
-    addCommentary
+    addCommentary,
   }
+
+
 }
