@@ -2,10 +2,12 @@ import { PulseLoader } from 'react-spinners'
 import { useContextPosts } from '../../shared/hooks/useContextPosts'
 import { CardPost } from './CardPost'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export const Posts = () => {
   const { posts, isFetchingPosts } = useContextPosts()
   const [selectedCourse, setSelectedCourse] = useState('')
+  let navigate = useNavigate()
 
     const filteredPosts = selectedCourse
       ? posts.filter((post) => post.course === selectedCourse)
@@ -42,7 +44,7 @@ export const Posts = () => {
 
       {filteredPosts.length > 0 ? (
         filteredPosts.map((post) => (
-          <CardPost key={post._id} post={post} />
+          <CardPost handleClick={()=>navigate(`/commentaries/${post._id}`)} key={post._id} post={post} />
         ))
       ) : (
         <p>No hay publicaciones disponibles</p>
