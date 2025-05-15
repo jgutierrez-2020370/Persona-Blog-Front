@@ -1,10 +1,41 @@
 .Posts-div {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   align-items: center;
-  justify-content: center;
 }
 
+.posts-header {
+  display: block;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px;
+}
+
+.posts-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #c2c4c4;
+}
+
+.posts-header select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #363535;
+  color: #c2c4c4;
+}
+
+.posts-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
 .card {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
@@ -78,7 +109,7 @@
 
 
 .btn-comments {
-  background-color: #cfd1d2;
+  background-color: #7d6500;
   color: black;
   font-size: 1rem;
   border: none;
@@ -89,7 +120,7 @@
 }
 
 .btn-comments:hover {
-  background-color: #7d6500;
+  background-color: #362b00;
 }
 
 #course-filter {
@@ -112,7 +143,7 @@ label {
 
 
 .card .btn-comments {
-  background-color: #cfd1d2;
+  background-color: #583f00;
   color: black;
   font-size: 1rem;
   border: none;

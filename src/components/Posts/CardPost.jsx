@@ -17,21 +17,19 @@ export const CardPost = ({ post, handleClick }) => {
       <h5 className="cardTitle">{name}</h5>
       <p className="cardDescription">{description}</p>
       <p className="cardCourse">{course}</p>
+      <p className="cardDate">{dateString}</p>
 
       
       {showMore && (
         <>
-          <p className="cardDate">{dateString}</p>
           <a className="link" href={link}>{link}</a>
         </>
       )}
-      <br />
 
       <button className="btn-show" onClick={toggleShowMore}>
         {showMore ? 'Ver menos' : 'Ver más'}
       </button>
 
-      {/* Botón de comentarios siempre visible */}
       <button onClick={handleClick} className="btn-comments">Comentarios</button>
     </div>
   )

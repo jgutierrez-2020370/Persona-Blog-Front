@@ -27,7 +27,7 @@ export const Posts = () => {
 
   return (
   <div className="Posts-div">
-    <div className='posts-center'>
+    <div className="posts-header">
       <h2>Mis Proyectos</h2>
       <select
         id="course-filter"
@@ -40,15 +40,17 @@ export const Posts = () => {
         <option value="TICs">TICs</option>
         <option value="Práctica Supervisada">Práctica Supervisada</option>
       </select>
-     </div>
+    </div>
 
+    <div className="posts-grid">
       {filteredPosts.length > 0 ? (
         filteredPosts.map((post) => (
-          <CardPost handleClick={()=>navigate(`/commentaries/${post._id}`)} key={post._id} post={post} />
+          <CardPost handleClick={() => navigate(`/commentaries/${post._id}`)} key={post._id} post={post} />
         ))
       ) : (
         <p>No hay publicaciones disponibles</p>
       )}
     </div>
-  )
+  </div>
+)
 }
