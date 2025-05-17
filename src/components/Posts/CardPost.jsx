@@ -15,13 +15,13 @@ export const CardPost = ({ post, handleClick }) => {
   return (
     <div className="card" style={{ width: '18rem' }}>
       <h5 className="cardTitle">{name}</h5>
-      <p className="cardDescription">{description}</p>
       <p className="cardCourse">{course}</p>
       <p className="cardDate">{dateString}</p>
 
       
       {showMore && (
         <>
+          <p className="cardDescription">{description}</p>
           <a className="link" href={link}>{link}</a>
         </>
       )}

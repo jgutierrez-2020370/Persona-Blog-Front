@@ -5,6 +5,14 @@
   align-items: center;
 }
 
+.loading {
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
 .posts-header {
   display: block;
   justify-content: space-between;
